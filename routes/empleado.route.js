@@ -47,7 +47,7 @@ empleadoRuta.route('/update/:id').put((req,res) =>{
     Empleado.findByIdAndUpdate(req.params.id,{
         $set: req.body
     })
-    .then+((data) =>{
+    .then((data) =>{
         res.send(data)
     })
     .catch((err) =>{

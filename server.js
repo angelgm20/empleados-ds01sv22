@@ -7,7 +7,7 @@ const path = require('path')
 //conexión con la BD
 mongoose
     //CONEXION LOCAL .connect('mongodb://127.0.0.1:27017/empleados02sv22')
-    .connect('mongodb+srv://angelicammti20:1234@cluster1.eulyuhd.mongodb.net/empleadosds02sv22?retryWrites=true&w=majority')
+    .connect('mongodb+srv://angelgmti20:1234@ds01.zpo0hsa.mongodb.net/?retryWrites=true&w=majority')
      .then((x) =>{
         console.log(`Conectado exitosamente a la base de datos: "${x.connections[0].name}"`)
      })
