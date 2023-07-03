@@ -1,4 +1,5 @@
 const express = require('express')
+
 const mongoose = require('mongoose')
 const cors = require('cors')
 const bodyParser =require('body-parser')
@@ -52,3 +53,4 @@ app.use(function(err,req,res,next){
     if(!err.statusCode) err.statusCode = 500
     res.status(err.statusCode).send(err.message)
 })
+
